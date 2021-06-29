@@ -1,7 +1,7 @@
 /* The problem statement for this challenge can be viewed at: 
 https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup */
 
-// The boilerplate (lines 5-29 and 79-93) has been taken from the above source as well
+// The boilerplate (lines 6-30 and 80-94) has been taken from the above source as well
 
 /*
 'use strict';
