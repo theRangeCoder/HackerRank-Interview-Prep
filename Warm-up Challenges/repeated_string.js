@@ -1,7 +1,7 @@
 /* The problem statement for this challenge can be viewed at: 
 https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup */
 
-// The boilerplate (lines 6-30 and 54-68) has been taken from the above source as well
+// The boilerplate (lines 6-30 and 64-78) has been taken from the above source as well
 
 /*
 'use strict';
