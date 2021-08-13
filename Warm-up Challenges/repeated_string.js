@@ -39,8 +39,26 @@ function readLine() {
  */
 
 function repeatedString(s, n) {
-    // Write your code here
-
+    let str = '', index = 0;
+    // Getting the desired string of length n
+    while (index < s.length) {
+        str += s.charAt(index);
+        index += 1;
+        if (index === s.length) {
+            index = 0;
+        }
+        if (str.length === n) {
+            break;
+        }
+    }
+    let count = 0;
+    // Counting the number of a's
+    for (let i = 0; i < str.length; i++) {
+        if (str.charAt(i) === 'a') {
+            count += 1;
+        }
+    }
+    return count;
 }
 
 /*
