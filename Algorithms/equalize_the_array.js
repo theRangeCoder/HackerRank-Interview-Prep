@@ -1,7 +1,7 @@
 /* The problem statement for this challenge can be viewed at: 
 https://www.hackerrank.com/challenges/equality-in-a-array/problem */
 
-// The boilerplate (lines 6-30 and 64-78) has been taken from the above source as well
+// The boilerplate (lines 6-30 and 59-73) has been taken from the above source as well
 
 /*
 'use strict';
@@ -36,9 +36,24 @@ function readLine() {
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-function equalizeArray(arr) {
-    // Write your code here
+// Logic for my code: Minimum number of deletions = Number of elements in the array - Frequency of the element which occurs the maximum number of times
 
+function equalizeArray(arr) {
+    let minDel = 0, maxFreq = 0, count = 0;
+    // Getting the frequency of the element which occurs the maximum number of times
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                count += 1;
+            }
+        }
+        if (count > maxFreq) {
+            maxFreq = count;
+        }
+        count = 0;
+    }
+    minDel = arr.length - maxFreq;
+    return minDel;
 }
 
 /*
